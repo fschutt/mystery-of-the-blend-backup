@@ -1,13 +1,13 @@
 # List of blender data structures
 
-### Linkreference
+### Link
 
 | struct field name       | structure      | type         | name                    | offset | size |
 |-------------------------|----------------|--------------|-------------------------|--------|------|
 | next                    | Link           | Link         | *next                   | 0      | 4    |
 | prev                    | Link           | Link         | *prev                   | 4      | 4    |
 
-### LinkDatareference
+### LinkData
 
 | struct field name       | structure      | type         | name                    | offset | size |
 |-------------------------|----------------|--------------|-------------------------|--------|------|
@@ -15,7 +15,7 @@
 | prev                    | LinkData       | LinkData     | *prev                   | 4      | 4    |
 | data                    | LinkData       | void         | *data                   | 8      | 4    |
 
-### ListBasereference
+### ListBase
 
 | struct field name       | structure      | type         | name                    | offset | size |
 |-------------------------|----------------|--------------|-------------------------|--------|------|
@@ -23,14 +23,14 @@
 | last                    | ListBase       | void         | *last                   | 4      | 4    |
 
 
-### vec2sreference
+### vec2s
 
 | struct field name       | structure      | type         | name                    | offset | size |
 |-------------------------|----------------|--------------|-------------------------|--------|------|
 | x                       | vec2s          | short        | x                       | 0      | 2    |
 | y                       | vec2s          | short        | y                       | 2      | 2    |
 
-### vec2ireference
+### vec2i
 
 | struct field name       | structure      | type         | name                    | offset | size |
 |-------------------------|----------------|--------------|-------------------------|--------|------|
@@ -40,7 +40,7 @@
 
 
 
-### vec2freference   
+### vec2f   
 
 | struct field name       | structure      | type         | name                    | offset | size |
 |-------------------------|----------------|--------------|-------------------------|--------|------|
@@ -50,7 +50,7 @@
 
 
 
-### vec2dreference
+### vec2d
 
 | struct field name       | structure      | type         | name                    | offset | size |
 |-------------------------|----------------|--------------|-------------------------|--------|------|
@@ -60,7 +60,7 @@
 
 
 
-### vec3ireference   
+### vec3i   
 
 | struct field name       | structure      | type         | name                    | offset | size |
 |-------------------------|----------------|--------------|-------------------------|--------|------|
@@ -71,7 +71,7 @@
 
 
 
-### vec3freference   
+### vec3f   
 
 | struct field name       | structure      | type         | name                    | offset | size |
 |-------------------------|----------------|--------------|-------------------------|--------|------|
@@ -82,7 +82,7 @@
 
 
 
-### vec3dreference 
+### vec3d 
 
 | struct field name       | structure      | type         | name                    | offset | size |
 |-------------------------|----------------|--------------|-------------------------|--------|------|
@@ -93,7 +93,7 @@
 
 
 
-### vec4ireference   
+### vec4i   
 
 | struct field name       | structure      | type         | name                    | offset | size |
 |-------------------------|----------------|--------------|-------------------------|--------|------|
@@ -105,7 +105,7 @@
 
 
 
-### vec4freference   
+### vec4f   
 
 | struct field name       | structure      | type         | name                    | offset | size |
 |-------------------------|----------------|--------------|-------------------------|--------|------|
@@ -117,7 +117,7 @@
 
 
 
-### vec4dreference   
+### vec4d   
 
 | struct field name       | structure      | type         | name                    | offset | size |
 |-------------------------|----------------|--------------|-------------------------|--------|------|
@@ -129,7 +129,7 @@
 
 
 
-### rctireference    
+### rcti    
 
 | struct field name       | structure      | type         | name                    | offset | size |
 |-------------------------|----------------|--------------|-------------------------|--------|------|
@@ -139,7 +139,7 @@
 | ymax                    | rcti           | int          | ymax                    | 12     | 4    |
 
 
-### rctfreference    
+### rctf    
 
 | struct field name       | structure      | type         | name                    | offset | size |
 |-------------------------|----------------|--------------|-------------------------|--------|------|
@@ -149,7 +149,7 @@
 | ymax                    | rctf           | float        | ymax                    | 12     | 4    |
 
 
-### IDPropertyDatareference
+### IDPropertyData
 
 | struct field name       | structure      | type         | name                    | offset | size |
 |-------------------------|----------------|--------------|-------------------------|--------|------|
@@ -160,7 +160,7 @@
 | val2                    | IDPropertyData | int          | val2                    | 16     | 4    |
 
 
-### IDPropertyreference
+### IDProperty
 
 | struct field name       | structure      | type         | name                    | offset | size |
 |-------------------------|----------------|--------------|-------------------------|--------|------|
@@ -182,7 +182,7 @@
 
 
 
-### IDreference     
+### ID     
 
 | struct field name       | structure      | type         | name                    | offset | size |
 |-------------------------|----------------|--------------|-------------------------|--------|------|
@@ -199,7 +199,7 @@
 
 
 
-### Libraryreference 
+### Library 
 
 | struct field name       | structure      | type         | name                    | offset | size |
 |-------------------------|----------------|--------------|-------------------------|--------|------|
@@ -222,7 +222,7 @@
 
 
 
-### PreviewImagereference
+### PreviewImage
 
 | struct field name       | structure      | type         | name                    | offset | size |
 |-------------------------|----------------|--------------|-------------------------|--------|------|
@@ -234,7 +234,7 @@
 | rect                    | PreviewImage   | int          | *rect[2]                | 24     | 8    |
 
 
-### IpoDriverreference
+### IpoDriver
 
 | struct field name       | structure      | type         | name                    | offset | size |
 |-------------------------|----------------|--------------|-------------------------|--------|------|
@@ -246,7 +246,7 @@
 | name                    | IpoDriver      | char         | name[128]               | 12     | 128  |
 
 
-### IpoCurvereference
+### IpoCurve
 
 | struct field name       | structure      | type         | name                    | offset | size |
 |-------------------------|----------------|--------------|-------------------------|--------|------|
@@ -279,7 +279,7 @@
 | driver                  | IpoCurve       | IpoDriver    | *driver                 | 88     | 4    |
 
 
-### Iporeference     
+### Ipo     
 
 | struct field name       | structure      | type         | name                    | offset | size |
 |-------------------------|----------------|--------------|-------------------------|--------|------|
@@ -304,7 +304,7 @@
 | pad                     | Ipo            | short        | pad                     | 82     | 2    |
 
 
-### KeyBlockreference
+### KeyBlock
 
 | struct field name       | structure      | type         | name                    | offset | size |
 |-------------------------|----------------|--------------|-------------------------|--------|------|
@@ -326,7 +326,7 @@
 | slidermax               | KeyBlock       | float        | slidermax               | 108    | 4    |
 
 
-### Keyreference     
+### Key     
 
 | struct field name       | structure      | type         | name                    | offset | size |
 |-------------------------|----------------|--------------|-------------------------|--------|------|
@@ -353,7 +353,7 @@
 | flag                    | Key            | short        | flag                    | 118    | 2    |
 
 
-### ScriptLinkreference
+### ScriptLink
 
 | struct field name       | structure      | type         | name                    | offset | size |
 |-------------------------|----------------|--------------|-------------------------|--------|------|
@@ -364,7 +364,7 @@
 | pad                     | ScriptLink     | int          | pad                     | 12     | 4    |
 
 
-### TextLinereference
+### TextLine
 
 | struct field name       | structure      | type         | name                    | offset | size |
 |-------------------------|----------------|--------------|-------------------------|--------|------|
@@ -378,7 +378,7 @@
 
 
 
-### TextMarkerreference     
+### TextMarker     
 
 | struct field name       | structure      | type         | name                    | offset | size |
 |-------------------------|----------------|--------------|-------------------------|--------|------|
@@ -394,7 +394,7 @@
 | pad                     | TextMarker     | char         | pad[4]                  | 36     | 4    |
 
 
-### Textreference
+### Text
 
 | struct field name       | structure      | type         | name                    | offset | size |
 |-------------------------|----------------|--------------|-------------------------|--------|------|
@@ -425,7 +425,7 @@
 | mtime                   | Text           | double       | mtime                   | 112    | 8    |
 
 
-### PackedFilereference
+### PackedFile
 
 | struct field name       | structure      | type         | name                    | offset | size |
 |-------------------------|----------------|--------------|-------------------------|--------|------|
@@ -436,7 +436,7 @@
 | data                    | PackedFile     | void         | *data                   | 16     | 4    |
 
 
-### Camerareference  
+### Camera  
 
 | struct field name       | structure      | type         | name                    | offset | size |
 |-------------------------|----------------|--------------|-------------------------|--------|------|
@@ -474,7 +474,7 @@
 | dof_ob                  | Camera         | Object       | *dof_ob                 | 128    | 4    |
 
 
-### ImageUserreference
+### ImageUser
 
 | struct field name       | structure      | type         | name                    | offset | size |
 |-------------------------|----------------|--------------|-------------------------|--------|------|
@@ -492,7 +492,7 @@
 | menunr                  | ImageUser      | short        | menunr                  | 30     | 2    |
 
 
-### Imagereference  
+### Image  
 
 | struct field name       | structure      | type         | name                    | offset | size |
 |-------------------------|----------------|--------------|-------------------------|--------|------|
@@ -539,7 +539,7 @@
 | vnode                   | Image          | void         | *vnode                  | 380    | 4    |
 
 
-### MTexreference 
+### MTex 
 
 | struct field name       | structure      | type         | name                    | offset | size |
 |-------------------------|----------------|--------------|-------------------------|--------|------|
@@ -575,7 +575,7 @@
 | warpfac                 | MTex           | float        | warpfac                 | 132    | 4    |
 
 
-### PluginTexreference
+### PluginTex
 
 | struct field name       | structure      | type         | name                    | offset | size |
 |-------------------------|----------------|--------------|-------------------------|--------|------|
@@ -598,7 +598,7 @@
 
 
 
-### CBDatareference  
+### CBData  
 
 | struct field name       | structure      | type         | name                    | offset | size |
 |-------------------------|----------------|--------------|-------------------------|--------|------|
@@ -610,7 +610,7 @@
 | cur                     | CBData         | int          | cur                     | 20     | 4    |
 
 
-### ColorBandreference
+### ColorBand
 
 | struct field name       | structure      | type         | name                    | offset | size |
 |-------------------------|----------------|--------------|-------------------------|--------|------|
@@ -626,7 +626,7 @@
 | data.cur                | CBData         | int          | cur                     | 28     | 4    |
 
 
-### EnvMapreference
+### EnvMap
 
 | struct field name       | structure      | type         | name                    | offset | size |
 |-------------------------|----------------|--------------|-------------------------|--------|------|
@@ -649,7 +649,7 @@
 | lastsize                | EnvMap         | short        | lastsize                | 94     | 2    |
 
 
-### Texreference
+### Tex
 
 | struct field name       | structure      | type         | name                    | offset | size |
 |-------------------------|----------------|--------------|-------------------------|--------|------|
@@ -727,7 +727,7 @@
 | preview                 | Tex            | PreviewImage | *preview                | 256    | 4    |
 
 
-### TexMappingreference
+### TexMapping
 
 | struct field name       | structure      | type         | name                    | offset | size |
 |-------------------------|----------------|--------------|-------------------------|--------|------|
@@ -741,7 +741,7 @@
 | ob                      | TexMapping     | Object       | *ob                     | 80     | 4    |
 
 
-### Lampreference
+### Lamp
 
 | struct field name       | structure      | type         | name                    | offset | size |
 |-------------------------|----------------|--------------|-------------------------|--------|------|
@@ -839,7 +839,7 @@
 | scriptlink.pad          | ScriptLink     | int          | pad                     | 380    | 4    |
 
 
-### Wavereference  
+### Wave  
 
 | struct field name       | structure      | type         | name                    | offset | size |
 |-------------------------|----------------|--------------|-------------------------|--------|------|
@@ -855,7 +855,7 @@
 | ipo                     | Wave           | Ipo          | *ipo                    | 52     | 4    |
 
 
-### Materialreference
+### Material
 
 | struct field name       | structure      | type         | name                    | offset | size |
 |-------------------------|----------------|--------------|-------------------------|--------|------|
@@ -1003,7 +1003,7 @@
 | gpumaterial.last        | ListBase       | void         | *last                   | 616    | 4    |
 
 
-### VFontreference  
+### VFont  
 
 | struct field name       | structure      | type         | name                    | offset | size |
 |-------------------------|----------------|--------------|-------------------------|--------|------|
@@ -1024,7 +1024,7 @@
 
 
 
-### MetaElemreference  
+### MetaElem  
 
 | struct field name       | structure      | type         | name                    | offset | size |
 |-------------------------|----------------|--------------|-------------------------|--------|------|
@@ -1056,7 +1056,7 @@
 | imat                    | MetaElem       | float        | *imat                   | 104    | 4    |
 
 
-### MetaBallreference
+### MetaBall
 
 | struct field name       | structure      | type         | name                    | offset | size |
 |-------------------------|----------------|--------------|-------------------------|--------|------|
@@ -1086,7 +1086,7 @@
 | rendersize              | MetaBall       | float        | rendersize              | 128    | 4    |
 | thresh                  | MetaBall       | float        | thresh                  | 132    | 4    |
 
-### BezTriplereference
+### BezTriple
 
 | struct field name       | structure      | type         | name                    | offset | size |
 |-------------------------|----------------|--------------|-------------------------|--------|------|
@@ -1102,7 +1102,7 @@
 | hide                    | BezTriple      | char         | hide                    | 31     | 1    |
 
 
-### BPointreference
+### BPoint
 
 | struct field name       | structure      | type         | name                    | offset | size |
 |-------------------------|----------------|--------------|-------------------------|--------|------|
@@ -1115,7 +1115,7 @@
 | pad                     | BPoint         | float        | pad                     | 32     | 4    |
 
 
-### Nurbreference
+### Nurb
 
 | struct field name       | structure      | type         | name                    | offset | size |
 |-------------------------|----------------|--------------|-------------------------|--------|------|
@@ -1143,7 +1143,7 @@
 
 
 
-### CharInforeference
+### CharInfo
 
 | struct field name       | structure      | type         | name                    | offset | size |
 |-------------------------|----------------|--------------|-------------------------|--------|------|
@@ -1154,7 +1154,7 @@
 | pad2                    | CharInfo       | short        | pad2                    | 6      | 2    |
 
 
-### TextBoxreference
+### TextBox
 
 | struct field name       | structure      | type         | name                    | offset | size |
 |-------------------------|----------------|--------------|-------------------------|--------|------|
@@ -1164,7 +1164,7 @@
 | h                       | TextBox        | float        | h                       | 12     | 4    |
 
 
-### Curvereference   
+### Curve   
 
 | struct field name       | structure      | type         | name                    | offset | size |
 |-------------------------|----------------|--------------|-------------------------|--------|------|
